@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Parisienne&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    --background: 0.951 0.018 84;
+    --foreground: 0.22 0 0;
+
+    --card: 0.97 0.012 82;
+    --card-foreground: 0.22 0 0;
+
+    --popover: 0.97 0.012 82;
+    --popover-foreground: 0.22 0 0;
+
+    --primary: 0.636 0.072 34;
+    --primary-foreground: 0.981 0.009 72;
+
+    --secondary: 0.849 0.042 14;
+    --secondary-foreground: 0.22 0 0;
+
+    --muted: 0.931 0.014 80;
+    --muted-foreground: 0.47 0.013 58;
+
+    --accent: 0.89 0.032 14;
+    --accent-foreground: 0.22 0 0;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --border: 0.849 0.02 68;
+    --input: 0.971 0.013 82;
+    --ring: 0.636 0.072 34;
+
+    --chart-1: 0.636 0.072 34;
+    --chart-2: 0.849 0.042 14;
+    --chart-3: 0.47 0.013 58;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.97 0.012 82;
+    --sidebar-foreground: 0.22 0 0;
+    --sidebar-primary: 0.636 0.072 34;
+    --sidebar-primary-foreground: 0.981 0.009 72;
+    --sidebar-accent: 0.89 0.032 14;
+    --sidebar-accent-foreground: 0.22 0 0;
+    --sidebar-border: 0.849 0.02 68;
+    --sidebar-ring: 0.636 0.072 34;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+}
